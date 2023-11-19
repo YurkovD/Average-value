@@ -1,0 +1,32 @@
+.game-card {
+    height: 100vh;
+    font-family: 'Open Sans', monospace;
+}
+
+.card-header {
+    background: rgb(75, 133, 128) ;
+    color:rgb(255, 255, 255)
+}
+
+.card-body {
+    background: rgb(224, 247, 245) ;
+}
+
+.card-footer :hover { 
+    background: #c4b782 ;
+    color:rgb(0, 0, 0) 
+}
+.card-footer{
+    background: rgb(75, 133, 128) ;
+    align-self: center;
+    width: 100%;
+}
+.btn-retr {
+    align-content: center;
+    width: 21vh;
+    font-size: 20px;
+    background-color: #ECE1B3;
+    color: #000000;
+
+    font-family: 'Open Sans', monospace;
+}
