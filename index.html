@@ -14,12 +14,25 @@
         <div class="col col-md-4 offset-md-4">
             <div class="card text-center">
                 <div class="card-header">
-                    <p class="m-0">Вопрос №<span id="orderNumberField">5</span></p>
+                    <div class="rules">
+                    <p>Правила:</span></p>
+                    <p>1. Если число MIN меньше '-999', будет присвоено '-999', если больше '998' - будет присвоено '998'</span></p>
+                    <p>2. Если число MAX больше '999', будет присвоено '999', если меньше '-998' - будет присвоено '-998'</span></p>
+                    <p>3. Нечисловое значение будет заменено на 'MIN = 0', 'MAX = 100' </span></p>
+                    <p>4. Максимальное число должно быть больше минимального</p>
+                    
+                    </div>
+                    <input class="form-control input-window" id="inputmin" value=""><br>    
+                    <input class="form-control input-window" id="inputmax" value=""><br>
+                    <div class="btn-СalcHover">
+                        <button class="btn btn-Сalc" id="btnСalc">вычислить</button> <!-- btn-outline-danger -->
+                    </div><br>
+                    <p class="m-0">Попытка №<span id="orderNumberField"></span></p>
                 </div>
                 <div class="card-body">
                     <div class="row no-gutters">
                         <div class="col">
-                            <h3 class="card-title m-0"><span id="answerField">Вы загадали число 5?</span></h3>
+                            <h3 class="card-title m-0"><span id="answerField">Введите числа</span></h3>
                         </div>
                     </div>
                 </div>
@@ -31,7 +44,7 @@
                     </div>
                 </div>
                 <div class="card-footer">
-                    <button class="btn btn-retr" id="btnRetry">Заново</button>
+                    <button class="btn btn-retr" id="btnRetry">ЗАНОВО</button>
                 </div>
             </div>
         </div>
