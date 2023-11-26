@@ -17,7 +17,7 @@ orderNumber=1;
     
 minValue = document.getElementById("inputmin").value ;
     
-minValue = (isNaN(minValue) && 'текст') ? 0 : minValue; //Проверяем является ли числом
+minValue = (isNaN(minValue) || 0) ? 0 : minValue; //Проверяем является ли числом
 minValue = (minValue == 0) ? inputmin.value = 0 : minValue; //Если не является числом, приравнивает к 0
 
 minValue = (minValue>=998) ? 998 : minValue; // Если больше 999, меняем на 998
